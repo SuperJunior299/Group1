@@ -1,0 +1,171 @@
+/* LOG IN PAGE */
+
+.logo {
+  max-height: 40px; 
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Arial, sans-serif;
+  background-color: #ff8686;
+  color: white;
+}
+
+.header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: translateY(0);
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button.home-button {
+  background-color: #ff8686;
+  color: white;
+  border: 2px solid #ff8686;
+}
+
+.button.contact-button {
+  background-color: #ffff00;
+  color: black;
+  border: 2px solid #ffff00;
+}
+
+.button.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+}
+
+.yellow-text {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+.input-box {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+.login-button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #404040;
+}
+
+.dont-have-account {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signup-link {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.logo-image{
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  width: 33.33vw;
+  height: 33.33vh;
+  object-fit: contain;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ff8686;
+}
+
+.highlight {
+  font-weight: bold;
+}
+.message-banner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff5733; /* Change the background color as needed */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* Style for the message banner */
+.message-banner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff5733; /* Change the background color as needed */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

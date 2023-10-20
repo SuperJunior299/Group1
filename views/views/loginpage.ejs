@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In Page</title>
+<link rel="stylesheet" href="login.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="header">
+    <div class="buttons">
+      <a href="/home" class="button home-button">Home</a>
+      <a href="#" class="button contact-button">Contact Us</a>
+    </div>
+    <h1 class="heading">
+      <img src="images/favicon.png" alt="I.T. Pathways Logo" class="logo">
+      I.T. Pathways
+    </h1>
+  </div>
+ 
+  <div class="message-banner" id="messageBanner">
+    <span id="messageText"></span>
+    <button id="dismissButton" onclick="dismissMessage()">Dismiss</button>
+  </div>
+     
+</div>
+
+  <div class="login-container"  >
+    <h2 class="login-title">Log In</h2>
+    <hr class="underline">
+
+    
+    <form action="/loginpage" method= "POST">
+      <form id="login-form">
+      <label class="input-label" for="username">Username:</label>
+        <input type="text" id="username" name="username" class="input-box" placeholder="Enter Your Username" required>
+    
+      <label class="input-label" for="password">Password:</label>
+        <input type="password" id="password" name="password" class="input-box" placeholder="Enter Your Password" required>
+    
+      <button type="submit">Log In</button>
+    
+    <hr class="underline">
+    
+    <p class="dont-have-account">
+      Don't have an account? <a href="/index" class="signup-link yellow-text">Sign Up</a>
+    </p>
+  </div>
+ 
+
+
+  <img src="images/favicon.png" alt="Logo" class="logo-image">
+  <footer class="footer">
+    <p class="footer-text"> BITS PROJECT <span class="highlight">s3902846, s3967899, s3914486, s3932146</span></p>
+  </footer>
+<script>
+  function showMessage(message) {
+    const messageBanner = document.getElementById('messageBanner');
+    const messageText = document.getElementById('messageText');
+    messageText.textContent = message;
+    messageBanner.style.display = 'block';
+}
+
+// Function to dismiss the message banner
+function dismissMessage() {
+    const messageBanner = document.getElementById('messageBanner');
+    messageBanner.style.display = 'none';
+}
+  </script>
+</body>
+</html>

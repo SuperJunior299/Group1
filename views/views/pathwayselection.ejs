@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I.T. Pathways - Pathway Selection</title>
+<link rel="stylesheet" href="pathwayselection.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="header">
+    <div class="buttons">
+      <a href="/home" class="button home-button">Home</a>
+      <a href="#" class="button contact-button">Contact Us</a>
+      <a href="#" class="button account-button">My Account</a>
+    </div>
+    <h1 class="heading">
+      <img src="images/favicon.png" alt="I.T. Pathways Logo" class="logo">
+      I.T. Pathways
+    </h1>
+  </div>
+  
+  <div class="content">
+    <div class="welcome-text">
+      <h2>Welcome User!</h2>
+    </div>
+    <br><br><br><br>
+    
+    <div class="centered-content"> 
+      <h3 class="choose-pathway">Choose Your I.T. Pathway</h3>
+      
+      <div class="pathway-selection">
+        <p class="small-text">Pathway</p>
+        <select id="pathway-select">
+          <option value="" disabled selected>Please select</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Web Programming">Web Programming</option>
+          <option value="Cyber Security">Cyber Security</option>
+        </select>
+        <p class="selected-pathway">You have selected: <span id="selected-pathway">____________</span></p>
+      </div>
+      
+      <div class="level-selection">
+        <p class="small-text">Choose Your Level</p>
+        <input type="range" id="level-range" min="1" max="3" step="1">
+        <p class="selected-level">You are here: <span id="selected-level">____________</span></p>
+      </div>
+
+      
+      <a href="/pathway_python">
+        <button class="continue-button">Start Your Journey!</button>
+      </a>
+      
+    </div>
+  </div>
+  
+  <script src="pathwayselection.js"></script>
+  <footer class="footer">
+    <p class="footer-text"> BITS PROJECT <span class="highlight">s3902846, s3967899, s3914486, s3932146</span></p>
+  </footer> 
+</body>
+</html>

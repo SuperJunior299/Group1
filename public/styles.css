@@ -1,0 +1,155 @@
+/* HOME PAGE */
+
+.logo {
+  max-height: 40px; 
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Arial, sans-serif;
+  overflow: hidden; 
+}
+
+.header {
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button.login-button {
+  background-color: gray;
+  color: white;
+  border: 2px solid gray;
+}
+
+.button.login-button:hover {
+  background-color: #ff8686;
+  color: white;
+}
+
+.button.contact-button {
+  background-color: #ffff00;
+  color: black;
+  border: 2px solid #ffff00;
+}
+
+.button.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.heading {
+  margin: 20px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: white;
+  margin-top: 100px;
+  position: relative;
+}
+
+.squiggle-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  max-height: 100%;
+  opacity: 1;
+}
+
+.it-pathways-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px 20px 40px 20px; 
+  padding-top: 100px;
+}
+
+.left-section h2 {
+  margin-bottom: 10px;
+  font-size: 40px; 
+}
+
+.button-group {
+  display: flex;
+}
+
+.join-now-button {
+  padding: 5px 10px;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more-button {
+  padding: 5px 10px;
+  background-color: white;
+  color: gray;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more-button:hover, .join-now-button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px 20px 40px 20px; 
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ff8686;
+}
+
+.highlight {
+  font-weight: bold;
+}

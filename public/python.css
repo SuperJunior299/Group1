@@ -1,0 +1,139 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.header {
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    background-color: #ff8686;
+}
+
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transform: translateY(0);
+}
+
+.button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.home-button {
+    background-color: #ff8686;
+    color: white;
+    border: 2px solid #ff8686;
+}
+
+.button.contact-button {
+    background-color: #ffff00;
+    color: black;
+    border: 2px solid #ffff00;
+}
+
+.button.contact-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.button.account-button {
+    background-color: #ff8686;
+    color: white;
+    border: 2px solid #ff8686;
+}
+
+.heading {
+    margin: 20px 0;
+}
+
+/* Logo styles */
+.logo {
+    max-height: 60px; /* Adjust the max-height as needed to control the logo size */
+    vertical-align: middle;
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.large-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* Text section styles for Learning Materials */
+.text-section {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Checklist styles */
+.checklist {
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    margin-top: 5px;
+}
+
+.video {
+    width: 50%;
+    margin: 0 auto 50px;
+    margin-top: 50px;
+  }
+
+
+.useful-resources-text {
+font-size: 18px;
+margin-top: 40px; /* Increase the top margin */
+margin-bottom: 100px
+}
+  
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #ff8686;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+/* Highlight styles */
+.highlight {
+    font-weight: bold;
+    color: #ff8686;
+}
